@@ -1,0 +1,51 @@
+\ProvidesPackage{style}
+
+\RequirePackage[ngerman]{babel}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{graphicx}
+\RequirePackage{mathtools,amsmath,amssymb,amsthm,mathrsfs}
+\RequirePackage{dsfont}
+\RequirePackage{enumitem}
+\RequirePackage{float}
+\RequirePackage{csquotes}
+\RequirePackage{tikz}
+\RequirePackage[parfill]{parskip}
+\RequirePackage{scrlayer-scrpage}
+\RequirePackage{hyperref}
+
+\clearpairofpagestyles
+\ofoot*{\pagemark}
+
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\PP}{\mathbb{P}}
+
+\newcommand{\AG}{\mathscr{A}}
+\newcommand{\BG}{\mathscr{B}}
+\newcommand{\CG}{\mathscr{C}}
+\newcommand{\FG}{\mathscr{F}}
+\newcommand{\PG}{\mathscr{P}}
+\newcommand{\XG}{\mathcal{X}}
+
+\newcommand{\vt}{\vartheta}
+
+\makeatletter
+\renewcommand\paragraph{%
+	\medskip
+	\@startsection{paragraph}{4}{0mm}%
+	{-\baselineskip}%
+	{.5\baselineskip}%
+	{\normalfont\normalsize\bfseries}}
+\makeatother
+
+\setlist[itemize]{parsep=7pt}
+
+\newenvironment{tightcenter}{
+	\newline
+	\setlength\topsep{.5\baselineskip}
+	\setlength\parskip{-\baselineskip}
+	\begin{center}
+	}{
+	\end{center}
+}
