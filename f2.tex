@@ -33,5 +33,58 @@ Unterjährig aufgelaufene Zinsen (\textbf{Stückzinsen}) sind beim Kauf an den V
 	\item Covenants: Zusatzvereinbarungen, die dem Emittenten bestimmte Handlungen erzwingen oder verbieten
 	\item Kündigungsrecht: Emittent/Gläubiger haben das Recht, vorzeitig die Anleihe zu kündigen
 \end{itemize}
+\bigskip
+\textbf{Bewertung von Anleihen}: Wert einer Anleihe zu einem bestimmten Zeitpunkt entspricht dem Wert des Zahlungsstroms zu diesem Zeitpunkt $\rightarrow$ \textbf{Zeitwert des Geldes} berücksichtigt Abzinsung/Diskontierung des Geldes
 
+\textbf{Einperiodige Verzinsung}:
+\begin{itemize}
+	\item Endwert $\text{EW}=C_0\cdot (1+r)$, $\;\;\;\;\; C_T$: Zahlung im Zeitpunkt $T$, $r$: Zinssatz
+	\item Barwert $\text{BW}=\cfrac{C_1}{1+r}$
+\end{itemize}
 
+\textbf{Mehrperiodige Verzinsung} bei $T$ Perioden:
+\begin{itemize}
+	\item $\text{EW}=C_0\cdot (1+r)^T$
+	\item $\text{BW}=\cfrac{C_T}{(1+r)^T}$
+\end{itemize}
+
+\textbf{Unterjährige Verzinsung} ($m$-maliges Verzinsen pro Periode):
+\begin{itemize}
+	\item $\text{EW}=C_0\cdot (1+\frac{r}{m})^{m\cdot T}$
+	\item Effektiver Jahreszinssatz $\text{EJZ}=\sqrt[T]{\frac{\text{EW}}{C_0}}-1$
+\end{itemize}
+
+\textbf{Stetige Verzinsung}:
+\begin{itemize}
+	\item $\text{EW}=C_0\cdot e^{r\cdot T}$
+\end{itemize}
+
+\textbf{Mehrperiodige Zahlungsströme}, d.h. pro Periode werden Zahlungen $C_i$ getätigt:
+\begin{itemize}
+	\item $\text{EW}=\sum\limits_{i=1}^{T}C_i\cdot (1+r)^{T-i}$
+	\item $\text{BW}=\sum\limits_{i=1}^{T}\cfrac{C_i}{(1+r)^i}$
+\end{itemize}
+
+\textbf{Rentenformeln} für mehrperiodige Zahlungsströme:
+\begin{itemize}
+	\item \textbf{Ewige Rente} (periodisch konstante Zahlungen $C$ für unendliche Anzahl an Perioden): $\text{BW}=\cfrac{C}{r}$
+	\item \textbf{Endliche Rente} (periodisch konstante Zahlungen $C$ für $T$ Perioden):\newline $\text{BW}=\cfrac{C}{r}\cdot \left(1-\cfrac{1}{(1+r)^T}\right)$
+	\item \textbf{Ewige Rente mit konstantem Wachstum} (Ewige Rente mit periodisch wachsenden Zahlungen um Rate $g$):\\
+	$\text{BW}=\cfrac{C}{r-g}$, $\;\;\;\;\;\;$wenn $g<r$
+	\item \textbf{Endliche Rente mit konstantem Wachstum} (Endliche Rente mit periodisch wachsenden Zahlungen um Rate $g$):\\
+	$\text{BW}=\cfrac{C}{r-g}\cdot\left(1-\left(\cfrac{1+g}{1+r}\right)^T\right)$
+\end{itemize}
+
+\textbf{Risikolose Anleihen}:
+\begin{itemize}
+	\item \textbf{Zerobonds} (Nullkuponanleihe, d.h. festgelegter Nennwert am Ende ausgezahlt):\\
+	\textbf{Interner Zinssatz/Yield} $y=r=\sqrt[T]{\cfrac{\text{Nennwert}}{\text{Preis}}}-1$
+	\item \textbf{Kuponanleihe} (Rückzahlung des Nennwertes \& zwischenzeitliche Zinszahlungen/Kupons $K_i$):\\
+	\textbf{Preis} $P=\cfrac{K_1}{1+r}+\cfrac{K_2}{(1+r)^2}+\ldots+\cfrac{K_T+\text{Nennwert}}{(1+r)^T}$ 
+\end{itemize}
+
+\textbf{Dynamischer Verlauf von Anleihepreisen}:
+\begin{itemize}
+	\item Wert fällt im zeitlichen Verlauf, wenn $\text{Preis}>\text{Nennwert}$
+	\item Wert steigt im zeitlichen Verlauf, wenn $\text{Preis}<\text{Nennwert}$
+\end{itemize}
