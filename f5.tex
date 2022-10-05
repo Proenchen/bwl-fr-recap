@@ -1,0 +1,61 @@
+\section{Portefeuilletheorie}
+
+\textbf{Ziel}: Abwägen zwischen Ertrag und Risiko 
+$\rightarrow$ Durch Erwerb verschiedener Aktien kann Risikominderung (\textbf{Diversifikation}) erreicht werden.
+
+\textbf{Gleichgewichtstheorie (CAPM)}: Wenn alle Investoren gemäß obiger Theorie agieren, entsteht ein \enquote{fairer} Preis für ein übernommenes Risiko $\rightarrow$ CAPM liefert Zusammenhang zwischen Risiko und angemessener Rendite
+
+\textbf{Renditen}:
+\begin{itemize}
+	\item \textbf{Absolute Aktienrendite} = Dividende + Kursveränderung
+	\item \textbf{Aktienrendite} $r = \cfrac{\text{Dividende + Kursveränderung}}{\text{anfänglicher Vermögenswert}}$
+\pagebreak
+	\item \textbf{Halteperiode Rendite}: Rendite, die ein Investor erhält, wenn er eine Investition
+	über $n$ Jahren hält:
+	\begin{center}
+		$\text{Halteperiode Rendite}=(1+r_1)\cdot(1+r_2)\cdot\ldots\cdot(1+r_n)-1$,
+	\end{center}
+	wobei $r_i$ die Rendite für das Jahr $i$ ist.
+	\item \textbf{Geometrisch durchschnittliche Rendite}:
+	\begin{center}
+		 $r_g=\sqrt[n]{(1+r_1)\cdot(1+r_2)\cdot\ldots\cdot(1+r_n)}-1$
+	\end{center}
+	\item \textbf{Arithmetisch durchschnittliche Rendite} $r_a=\cfrac{r_1+r_2+\dots+r_n}{n}$
+\end{itemize}
+Für eine Historie von $T$ Renditen $R_i$ können folgende Kennzahlen bestimmt werden:
+\begin{itemize}
+	\item \textbf{Durchschnittliche Rendite} $\bar{R}=\cfrac{R_1+R_2+\dots+R_T}{T}$
+	\item \textbf{Standardabweichung der Renditen}:
+	\begin{center}
+		$SD=\sqrt{VAR}=\sqrt{\cfrac{(R_1-\bar{R})^2+(R_2-\bar{R})^2+\ldots+(R_T-\bar{R})^2}{T-1}}$
+	\end{center}
+\end{itemize}
+
+\textbf{Risikoprämie}: Zusätzliche Rendite über die risikolose Rendite hinaus für die Übernahme von Risiko\\
+
+\textbf{Einzelne Wertpapiere}:
+\begin{itemize}
+	\item Für Wahrscheinlichkeiten $w_i$, dass eine Rendite $r_i$ eintritt, ist die
+	\begin{center}
+		\textbf{Erwartete Rendite} $\mu=\sum w_i\cdot r_i$
+	\end{center}
+	\item \textbf{Varianz} $\sigma^2=\sum (r_i-\mu)\cdot w_i$
+	\item \textbf{Standardabweichung} $\sigma=\sqrt{\text{Varianz}}$
+\end{itemize}
+\bigskip
+\textbf{Portefeuilles}: Betrachte Portefeuille mit $n$ Wertpapieren:
+\begin{itemize}
+	\item Sei $S_i$ der Wert der Aktie $i$ mit Einzelrendite $\tilde{r}_i$ von dem $x_i$ Stück im Portefeuille sind. Dann gilt:
+	\begin{center}
+		\textbf{Portefeuillerendite} $\tilde{r}_w=\sum\limits_{i=1}^n w_i\cdot\tilde{r}_i$
+	\end{center}
+	mit \textbf{Portefeuilleanteilen} $w_i=\cfrac{x_i\cdot S_i}{\sum\limits_{k=1}^{n}x_k\cdot S_k}$
+	\item \textbf{Wert des Portefeuilles} $=\sum\limits_{k=1}^{n}x_k\cdot S_k$
+	\item \textbf{Erwartete Portefeuillerendite}: $\mu_w=\E(\sum\limits_{i=1}^n w_i\cdot\tilde{r}_i)=\sum\limits_{i=1}^n w_i\cdot\mu_i$, wobei $\mu_i$ die erwartete Rendite für Aktie $i$ ist.
+	\item \textbf{Varianz der Portefeuillerendite} für Portefeuille mit 2 Wertpapieren: 
+	\begin{center}
+		$\sigma^2_w=w_1^2\sigma_1^2+w_2^2\sigma_2^2+2w_1w_2\text{cov}_{1,2}$
+	\end{center}
+	mit \textbf{Kovarianz} $\text{cov}_{1,2}=\sigma_1\sigma_2\rho_{12}=\E((\tilde{r}_1-\mu_1)(\tilde{r}_2-\mu_2))$ \textit{(s. FS5/18)} und\\
+	\textbf{Korrelation} $\rho_{12}\in[-1;1]$
+\end{itemize}
