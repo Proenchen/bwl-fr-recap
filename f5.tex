@@ -59,3 +59,34 @@ Für eine Historie von $T$ Renditen $R_i$ können folgende Kennzahlen bestimmt w
 	mit \textbf{Kovarianz} $\text{cov}_{1,2}=\sigma_1\sigma_2\rho_{12}=\E((\tilde{r}_1-\mu_1)(\tilde{r}_2-\mu_2))$ \textit{(s. FS5/18)} und\\
 	\textbf{Korrelation} $\rho_{12}\in[-1;1]$
 \end{itemize}
+\bigskip
+\textbf{Erreichbare Rendite/Risiko-Kombinationen}:
+Betrachte Einfluss des Korrelationskoeffizienten:
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{images/portefeuille.png}
+\end{center}
+\begin{itemize}
+	\item $\rho=1$: keine Risikoreduktion
+	\item $\rho=-1$: vollständige Risikoeliminierung möglich
+	\item Portefeuille mit kleinster Varianz heißt \textbf{Minimum Varianz Portefeuille MVP}
+	\item Nur Portefeuilles oberhalb des MVP sind effizient! (\textbf{Effizienter Rand})
+\end{itemize}
+\bigskip
+\textbf{Kombinationen mit risikolosem Wertpapier}:
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{images/riskfree.png}
+\end{center}
+Betrachte Portefeuille aus riskantem Instrument mit Anteil $w_A$ und Rendite $\tilde{r}_A$ und risikolosem Wertpapier mit Anteil $w_0$ und Rendite $r$.
+\begin{itemize}
+	\item \textbf{Portefeuillerendite} $\tilde{r}_w=w_A\tilde{r}_A+w_0r$
+	\item \textbf{Erwartete Rendite} $\mu_w=w_A\mu_A+w_0r$
+	\item \textbf{Risiko} $\sigma_w^2=w_A^2\sigma_A^2\implies\sigma_w=w_A\sigma_A\implies$ lineare Gerade s. oben
+\end{itemize}
+Betrachte Kombination aus risikolosem Instrument und mehreren risikobehafteten Instrumenten:
+\begin{center}
+	\includegraphics[width=0.65\textwidth]{images/r_and_r.png}
+\end{center}
+\begin{itemize}
+	\item Effiziente Portefeuilles liegen auf einer Geraden: $\mu_w=r+\cfrac{\mu_T-r}{\sigma_T}\cdot\sigma_w$
+	\item Gestrichelte Linie: Am Punkt $T$ wird 100\% in das Tangentialportefeuille investiert, d.h. um in den gestrichelten Bereich zu kommen, müssen Schulden aufgenommen werden
+\end{itemize}
