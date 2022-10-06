@@ -118,6 +118,23 @@ $\rightarrow$ Jeder Investor legt sein riskantes Vermögen in der gleichen Zusam
 	\underbrace{\cfrac{\mu_M-r}{\sigma_M}}_\text{Preis pro Einheit Risiko}\cdot
 	\underbrace{\sigma_w}_\text{Risikomenge}
 	\]
+	\item $\cfrac{\mu_M-r}{\sigma_M}$ gibt an, wie viel zusätzliche Rendite im Gleichgewicht für eine Einheit\\\\ zusätzlichen Risikos zu erwarten ist
 \end{itemize}
-
-\textbf{Wertpapiermarktlinie}:
+\bigskip
+\textbf{Wertpapiermarktlinie}: Betrachte nun einzelne Wertpapiere, statt ganzen Portefeuilles.
+Für einzelnes Wertpapier $j$ ist nur Beitrag zum Risiko des Marktportefeuilles $\text{cov}(\tilde{r}_j,\tilde{r}_M)$ relevant.
+\textbf{Zentrale Beziehung zur Bewertung riskanter Wertpapiere}:
+\[
+\underbrace{\mu_j}_\text{erwartete Rendite}=
+\underbrace{r}_\text{risikolose Rendite} + 
+\underbrace{\cfrac{\mu_M-r}{\text{cov}_{M,M}}}_\text{Preis pro Einheit Risiko}\cdot
+\underbrace{\text{cov}_{j,M}}_\text{Risikomenge}= r +
+\underbrace{(\mu_M-r)}_\text{Marktrisikoprämie}\cdot
+\beta_j
+\]
+mit \textbf{Beta-Faktor}: $\beta_j=\cfrac{\text{cov}_{j,M}}{\text{cov}_{M,M}}=\cfrac{\text{cov}_{j,M}}{\sigma_M^2}$.\\\\
+$\rightarrow$ Varianz eines Wertpapiers als alleinige Größe nicht ausreichend für die Bewertung des Risikos. Andere Wertepapiere müssen mitbetrachtet werden $\rightarrow$ Kovarianz wichtig!
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{images/risk-overview.png}
+\end{center}
+Unternehmensbezogenes Restrisiko lässt sich durch ein breites Investment weg diversifizieren, der Beitrag zum Gesamtrisiko aber nicht!
