@@ -22,7 +22,7 @@ Dienstleistungskosten, Kosten für Lizenzen, Kapitalkosten, öffentliche Abgaben
 $\text{Gewinn}=p\cdot x-k_V\cdot x-K_f$ \qquad\qquad\qquad\qquad\qquad\qquad\textit{Bsp. s. FS4/21}
 \bigskip
 
-\textbf{Einzelkosten}: Können einem Kostenobjekt eindeutig und vollständig zugeordnet werden
+\textbf{Einzelkosten}: Können einem Kostenobjekt (Kostenträger) eindeutig und vollständig zugeordnet werden
 
 \textbf{Gemeinkosten}: Werden durch mehrere Kostenobjekte gemeinsam erzeugt $\rightarrow$ müssen indirekt über sinnvolle Kostenverteilungsschlüssel aufgeteilt werden
 
@@ -34,3 +34,47 @@ $\rightarrow$ Einteilung in variable/fixe/Einzel-/Gemeinkosten nicht immer einde
 \textbf{Plan-Kosten}: Zukünftig zu erwartende Kosten
 
 \textbf{Normalkosten}: Durchschnittliche Ist-Kosten mehrerer vergangener Perioden
+
+\subsection{Kostenstellenrechnung}
+\textbf{Frage}: Wo fallen die Kostenarten an?
+
+\textbf{Kostenstelle}: Organisatorischer Bereich, für den Kosten selbständig geplant, erfasst und
+kontrolliert wird
+
+\textbf{Kostenstellenhauptgruppen}: Fertigungsstellen, Materialstellen, Verwaltungsstellen, Vertriebsstellen, Forschungs- und Entwicklungsstellen, Allgemeine (Hilfs-)Stellen
+\begin{itemize}
+	\item \textbf{Vorkostenstellen}: Für interne Verwaltung und Dienstleistungen
+	\item \textbf{Endkostenstellen}: Arbeit an Kostenobjekten, die Kunden kaufen
+\end{itemize}
+
+\textbf{Ziel der Kostenstellenrechnung}: Aufgliederung der Kostenarten auf Kostenstellen
+\begin{itemize}
+	\item \textbf{Primärkostenverrechnung}: Zuordnen und Verteilen der Kosten auf Kostenstellen
+	\begin{itemize}
+		\item \textbf{Produkt-Einzelkosten}: Eindeutig einem Produkttyp, also einem Kostenträger zuordenbar
+		\item \textbf{Kostenstelle-Einzelkosten}: Eindeutig einer Kostenstelle zuordenbar (aber keinem Produkttyp)
+		\item \textbf{Kostenstellen-Gemeinkosten}: Entstehen für mehrere Kostenstellen und müssen über geeignete Schlüssel auf Kostenstellen verteilt werden
+	\end{itemize}
+	\item \textbf{Sekundärkostenrechnung}: Verteilen der Kosten von Vorkostenstellen auf Endkostenstellen
+	\begin{itemize}
+		\item \textbf{Anbauverfahren}: Kosten der Vorkostenstellen werden nur auf Endkostenstellen verteilt, aber nicht auf andere Vorkostenstellen
+		\item \textbf{Stufenleiterverfahren}: Kosten der Vorkostenstellen werden auf Endkostenstellen und auch auf andere Vorkostenstellen verteilt (aber nur in eine Richtung!)\\
+		$\rightarrow$ Reihenfolge hat Einfluss auf Berechnung\\
+		$\rightarrow$ Starte mit Kostenstelle, die prozentual am meisten Leistungen für andere Vorkostenstellen erbringt
+		\item \textbf{Gleichungsverfahren}: Wie Stufenleiterverfahren, aber zwei Vorkostenstellen können sich auch wechselseitig mit Kosten belasten
+	\end{itemize}
+	$\rightarrow$ \textbf{Gesamtkosten pro Kostenstelle} = Kostenstelle-Einzelkosten + primäre zugerechnete Gemeinkosten + sekundär zugerechnete Gemeinkosten\\
+	$\rightarrow$ Wahl der Methode abhängig von Unternehmensstruktur
+\end{itemize}
+\textit{s. Gleichungen FS5/23-28!!!}\\
+
+\textbf{Betriebsabrechnungsbogen (BAB)}: Werkzeug für Kostenstellenrechnung
+\begin{itemize}
+	\item Spalten $\widehat{=}$ Kostenstellen
+	\item Zeilen $\widehat{=}$ Kosten je Kostenstelle
+	\item $\sum\text{Horizontal }\widehat{=}$ Kostenentlastung der leistenden Kostenstelle
+	\item $\sum\text{Vertikal }\widehat{=}$ Gesamtkosten der Kostenstelle
+\end{itemize}
+\textit{s. Bsp. FS5/21}
+
+\subsection{Kostenträgerrechnung}
